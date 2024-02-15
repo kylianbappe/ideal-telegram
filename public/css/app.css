@@ -1,0 +1,1061 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Radley', serif;
+}
+
+/* Navbar */
+.nav-container{
+    background-color: #81AA8B;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img.logo-nav{
+    width: 20%;
+    object-fit: cover;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconProfile{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+/* Login Dokter */
+.loginDokterContainer{
+    height: calc(100vh - 120px);
+    width: 100%;
+    background-image: url('../img/dentika.png');
+    background-position: 0% 28%;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.formAuth{
+    border: 5px solid #CBE7D3;
+    border-radius: 20px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.formInput{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+input.auth{
+    border-radius: 0.375rem;
+    border: 3px solid #cdcfd6;
+    width: 400px;
+    display: block;
+    padding: 12px;
+    outline: none;
+    margin-top: 0.25rem;
+}
+
+input.auth:focus{
+    border-color: #CBE7D3;
+    transition: all 0.5s ease;
+}
+
+.submitBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.auth{
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #81AA8B;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+
+    &:hover{
+        background-color: rgb(152, 192, 162);
+        transition: all 0.5s ease;
+    }
+}
+
+/* Sidebar */
+.side-nav{
+    width: 150px;
+    background-color: #CBE7D3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-nav{
+    height: 95%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 60px;
+}
+
+/* Home */
+.content-home{
+    height: calc(100% - 120px);
+    display: flex;
+}
+
+.content{
+    width: calc(100% - 150px);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mid-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+
+.jumlah-pasien-container{
+    background-color: #CBE7D3;
+    width: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumlah-pasien-selesai-container{
+    background-color: #81AA8B;
+    padding: 20px 30px;
+    width: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span.jmlhpasien{
+    font-size: 20px;
+}
+
+.border-gap-home{
+    width: 80%;
+    margin: 15px 0px;
+    border: 1px solid black;
+}
+
+.border-gap{
+    width: 100%;
+    border: 2px solid black;
+}
+
+span.total-jumlah-pasien{
+    font-size: 26px;
+}
+
+.box-selection{
+    height: 340px;
+    width: 300px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    &:not(:hover) {
+        background-color: #D9D9D9;
+        transition: all 0.5s ease
+    }
+    &:hover{
+        background-color: rgba(217, 217, 217, 0.3);
+        transition: all 0.5s ease
+    }
+}
+
+.box-item{
+    height: 100%;
+    width: 100%;
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img.select-menu{
+    height: 30%;
+}
+
+span.selection{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1700px) {
+
+    .jumlah-pasien-container{
+        width: 40%;
+    }
+
+    .jumlah-pasien-selesai-container{
+        width: 40%;
+
+    }
+
+    .box-selection{
+        height: 240px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .mid-content{
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .content-home{
+        height: 120vh;
+    }
+
+    .content{
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    .content-home{
+        height: 200vh;
+    }
+
+    .mid-content{
+        flex-direction: column;
+    }
+
+    .jumlah-pasien-container{
+        height: 100px;
+        font-size: 12px;
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .jumlah-pasien-selesai-container{
+        height: 100px;
+        font-size: 12px;
+        padding: 20px 0px;
+        width: 100%;
+    }
+
+    .top-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .border-gap{
+        width: 90%;
+    }
+}
+
+
+/* Pemeriksaan Pasien */
+.container-pasien{
+    position: relative;
+    height: auto;
+    min-height: calc(100vh - 120px);
+    display: flex;
+}
+
+.content-pasien{
+    padding: 20px;
+    height: fit-content;
+    width: calc(100% - 150px);
+}
+
+.table-container{
+}
+
+.table-container-tahapsatu{
+}
+
+.table-container-tahapdua{
+    display: none;
+}
+
+.border-pertabel{
+    margin: 15px 0px;
+    width: 100%;
+    border: 0.5px solid black;
+}
+
+.jumlah-baris{
+    margin: 20px 0px;
+    padding: 10px 20px;
+}
+
+.jumlah-baris-pasien{
+    margin: 20px 0px;
+    padding: 10px 20px;
+}
+
+.isi-baris{
+    display: flex;
+}
+
+.isi-baris-norecord{
+    display: flex;
+    justify-content: center;
+}
+
+.itemOne{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.itemTwo{
+    display: flex;
+    align-items: center;
+}
+
+
+span.judul{
+    font-weight: 600;
+}
+
+span.jenis{
+    margin-left: 35px;
+}
+span.tgl{
+    margin-left: 10px;
+}
+span.periksa{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #81AA8B;
+}
+
+.firstTblSection{
+    display: flex;
+    flex: 1;
+}
+
+.secondTblSection{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fill-container{
+}
+
+/* Pasien Admedika \ Umum Tahap 1 */
+.admedika-container{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.itemAdmedika{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+span.namaPasienAdmedika{
+    font-size: 25px;
+}
+
+span.titleSoap{
+    font-size: 19px;
+}
+
+.container-spanAdmedika{
+    border: 2px solid rgba(0,0,0,0.2);
+    background-color: lightgray;
+    width: 400px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.bottom-form-admedika{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.left{
+}
+
+.right{
+    background-color: #D9D9D9;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.boxform{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.spanGray{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: lightgray;
+    border: 2px solid rgba(0,0,0,0.2);
+}
+
+.spanDokter{
+    width: 60%;
+    padding: 10px;
+    background-color: lightgray;
+    border: 2px solid rgba(0,0,0,0.2);
+}
+
+select.date{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+input.namaDokter{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+input.jumlahTindakan{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+span.namaDokter{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+.tindakanSOAP{
+}
+
+button.submitAdmedika{
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #81AA8B;
+}
+
+.submitForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.submitFormTahapDua{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Tindakan Gigi Admedika */
+
+.container-tind-gigi{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parent-tindakan{
+    height: 70px;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-tind-gigi-tindakan{
+    display: flex;
+    gap: 60px;
+    padding: 10px;
+}
+
+.container-tind-gigi-tindakan2{
+    display: flex;
+    position: absolute;
+    bottom: -297px;
+    left: 176px;
+    padding: 10px;
+}
+
+.item-tindakan{
+    display: flex;
+    gap: 30px;
+}
+
+textarea.soap{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+input.soap{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.tindakanGigi{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container-soap{
+    display: flex;
+    padding: 10px;
+}
+
+.child-soap{
+    width: 50%;
+}
+
+.calendar-container{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itemTindakanGigi{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.cldnr{
+    height: 60%;
+    color: black;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.iconfa{
+    cursor: pointer;
+}
+
+.dropdown{
+    border: 2px solid rgba(0,0,0,0.2);
+    background-color: lightgray;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown-payment{
+    border: 2px solid rgba(0,0,0,0.2);
+    background-color: lightgray;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.parent-dd{
+    width: 400px;
+    margin-right: 40px;
+}
+
+.parent-dd-payment{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    gap: 30px;
+}
+
+.selectOption {
+    border: 2px solid rgba(0,0,0,0.2);
+    width: 400px;
+    background-color: lightgray;
+    padding: 10px;
+    height: 300px;
+    display: none;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.choice{
+    font-size: 13px;
+    margin: 10px 0px;
+}
+
+/* Reset Password */
+
+.container-rp{
+    width: calc(100% - 150px);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-resetpassword{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+span.heading-pemeriksaan-pasien{
+    font-size: 25px;
+}
+
+.heading-infoakun{
+    text-align: center;
+}
+
+.form-rp{
+    padding: 20px;
+    width: 80%;
+}
+
+.maincontent-rp{
+    display: flex;
+}
+
+.lockimg-container{
+    height: 500px;
+    margin-right: 50px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+img.lock{
+    height: 30%;
+}
+
+.input-rp{
+    width: 900px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+    width: 75%;
+}
+
+label.name{
+    font-size: 20px;
+}
+
+.boxv2{
+    border: 2px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    width: 400px;
+    background-color: #BEBEBE;
+}
+
+input.reset-password{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.rp-submit-container{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+button.submit-rp{
+    background-color: #81AA8B;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* Info Akun */
+
+.bg-account-nav{
+    height: 320px;
+    margin-right: 50px;
+    width: 280px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container-infoakun{
+    width: calc(100% - 150px);
+    padding: 20px 40px;
+    display: flex;
+    background: url('../img//tooth-bg.jpeg');
+    flex-direction: column;
+}
+
+.content-infoakun{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Riwayat Pasien */
+
+.filter-container{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0px;
+    display: flex;
+}
+
+.search-box-filter{
+    border: 2px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    background-color: #F0F0F0;
+}
+
+.secondSectionRwt{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Detail Riwayat */
+
+.tbl-detail-riwayat{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-soap,
+.r-tindakan{
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+
+.data-pasien-dr{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.wrapper-data-pasien{
+    display: flex;
+    margin: 10px 0px;
+}
+
+
+/* 6 Bulan */
+
+span.petunjuk{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #81AA8B;
+    margin-right: 20px;
+}
+
+span.tindakan{
+    color: #675D5D;
+}
+
+.container-tind-nambulan{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapping-tindk{
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Laporan Pemeriksaan */
+
+select.asuransi{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.submitForm-laporan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680px;
+}
+
+.xyzbca{
+    display: flex;
+    align-items: center;
+    width: 680px;
+}
+
+.gaps-xz{
+    gap: 30px;
+    width: 41%;
+    display: flex;
+}
+
+
+/* Hasil Laporan */
+
+
+.text-box-laporan{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.centering-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-laporan{
+    padding: 10px;
+    height: fit-content;
+    width: calc(100% - 150px);
+}
+
+.laporan-section{
+    display: flex;
+}
+
+.laporan-section-admin{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.cont-hehr{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.items-hehr{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Tambah Pasien */
+
+.container-tambahpasien{
+    border: 2px solid rgba(0,0,0,0.2);
+    background-color: lightgray;
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+input.tmbh-pasien{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.tvx-container{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.itemTvx{
+    display: flex;
+    width: 15%;
+    align-items: center;
+}
+
+.itemTvxMargin{
+    display: flex;
+    width: 5%;
+    align-items: center;
+}
+
+.itemTvxSec{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.itemTvxSecTelp{
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+
+span.tvx{
+    font-size: 19px;
+    margin-right: 50px;
+}
+
+
+.item-p-c{
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.dftr-pasien-jns{
+}
+
+.modal-warning{
+    position: absolute;
+    background-color: white;
+    height: 250px;
+    width: 600px;
+    border: 6px solid #81AA8B;
+    display: none;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    bottom: 0;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-btns{
+    display: flex;
+    gap: 30px;
+}
+
+button.modal{
+    background-color: #81AA8B;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+}
+
+button.cetak-pem{
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #515151;
+}
+
+.scrollable-column {
+    display: flex;
+    flex-direction: column; /* Display items in a column layout */
+}
+
+.scrollable-column span {
+    margin-bottom: 20px;
+}
